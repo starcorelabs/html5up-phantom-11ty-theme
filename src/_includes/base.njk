@@ -1,0 +1,115 @@
+<!-- base.njk -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Template Converted to 11ty Theme.">
+    <meta name="author" content="HTML5UP-PHANTOM">
+    <link rel="icon" href="{{ '/' | url }}assets/images/logo.ico">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/' | url }}assets/css/main.css" type="text/css">
+    <noscript><link rel="stylesheet" href="{{ '/' | url }}assets/css/noscript.css" type="text/css"/></noscript>
+</head>
+
+<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="{{ '/' | url }}" class="logo">
+									<span class="symbol"><img src="{{ '/' | url }}assets/images/logo.svg" alt="" /></span><span class="title">{{ title }}</span>
+								</a>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+					<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="{{ '/' | url }}">Home</a></li>
+							<li><a href="{{ '/' | url }}about">About</a></li>
+							<li><a href="{{ '/' | url }}blog">Blog</a></li>
+							<li><a href="{{ '/' | url }}products">Products</a></li>
+							<li><a href="{{ '/' | url }}services">Services</a></li>
+						</ul>
+					</nav>
+    <!-- block render -->
+    {% block main %}{% endblock main %}
+    <div class="content">{{ content | safe }}</div>
+    <!-- endblock render -->
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form id="contact-form" method="post" action="">
+
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Success -->
+                        <input type="hidden" name="_next" value="">
+
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" class="form-control" name="First Name" id="firstName" placeholder="First Name" required/>
+                            </div>
+                            <div class="field half">
+                                <input type="text" class="form-control" name="Last Name" id="lastName" placeholder="Last Name" required/>
+                            </div>
+                            <div class="field">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" autocomplete="example@email.com" required/>
+                            </div>
+                            <div class="field">
+                                <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+                            </div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+		<!-- Scripts -->
+			<script src="{{ '/' | url }}assets/js/jquery.min.js"></script>
+			<script src="{{ '/' | url }}assets/js/browser.min.js"></script>
+			<script src="{{ '/' | url }}assets/js/breakpoints.min.js"></script>
+			<script src="{{ '/' | url }}assets/js/util.js"></script>
+			<script src="{{ '/' | url }}assets/js/main.js"></script>
+</body>
+
+</html>
+<!-- end base.njk --></body>
+
+</html>

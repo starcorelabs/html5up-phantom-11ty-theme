@@ -1,0 +1,25 @@
+{
+  "name": "html5up-phantom-11ty-theme",
+  "version": "1.0.0",
+  "description": "Converting HTML5-Up Phantom template to an 11ty theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starcorelabs/html5up-phantom-11ty-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/starcorelabs/html5up-phantom-11ty-theme/issues"
+  },
+  "homepage": "https://github.com/starcorelabs/html5up-phantom-11ty-theme#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
